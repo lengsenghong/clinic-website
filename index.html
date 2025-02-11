@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Clinic</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">HealthCare</div>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Doctors</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <button class="appointment-btn" onclick="location.href='appointment.html'">Book Appointment</button>
+                <button class="manage">Manage</button>
+            </div>
+            <div class="burger" onclick="toggleMenu()">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+        
+    </header>
+    
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h4 class="medical-tag">MEDICAL</h4>
+            <h1>Healthcare Solutions</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+            <button class="find-doctors">Find Doctors</button>
+        </div>
+        <div class="hero-image">
+            <img src="src\Doctors-amico.png" alt="Healthcare Illustration">
+        </div>
+    </section>
+    
+    <section class="service-section">
+        <h2>Our Services</h2>
+        <p class="service-intro">Providing top-quality healthcare services to meet your needs.</p>
+        
+        <div class="service-grid">
+            <div class="service-card">
+                <img src="https://cdni.iconscout.com/illustration/premium/thumb/medical-check-up-illustration-download-in-svg-png-gif-file-formats--hospital-checkup-person-at-doctor-checking-patient-service-pack-treatment-illustrations-4056597.png?f=webp" alt="General Checkup">
+                <h3>General Checkup</h3>
+                <p>Comprehensive health assessments to ensure your well-being.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+    
+            <div class="service-card">
+                <img src="https://img.freepik.com/free-psd/modern-dental-chair-equipment-ready-patient-blue-white-clean-design_632498-45746.jpg" alt="Dental Care">
+                <h3>Dental Care</h3>
+                <p>Professional dental services for a healthy, bright smile.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+    
+            <div class="service-card">
+                <img src="https://cdn-icons-png.flaticon.com/512/9340/9340051.png" alt="Pediatrics">
+                <h3>Pediatrics</h3>
+                <p>Dedicated care for infants, children, and adolescents.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+    
+            <div class="service-card">
+                <img src="https://w7.pngwing.com/pngs/254/550/png-transparent-ambulance-computer-icons-emergency-first-aid-kit-logo-ambulance-medical-care.png" alt="Emergency Care">
+                <h3>Emergency Care</h3>
+                <p>24/7 emergency services to handle urgent medical needs.</p>
+                <a href="#" class="learn-more">Learn More</a>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="doctors" class="doctor-section">
+        <h2>Meet Our Doctors</h2>
+        <div class="doctor-list">
+            <div class="doctor-item">
+                <img src="src\transparent-stethoscope-cartoon-doctor-in-scrubs-with-1710842873879.webp" alt="Dr. John Doe">
+                <h3>Dr. John Doe</h3>
+            </div>
+            <div class="doctor-item">
+                <img src="src\pngtree-smiling-cartoon-doctor-with-stethoscope-clipart-png-image_13752330.png" alt="Dr. Jane Smith">
+                <h3>Dr. Jane Smith</h3>
+            </div>
+            <div class="doctor-item">
+                <img src="src\transparent-glasses-cartoon-doctor-with-glasses-and-stern-expression66029798dbefa2.94349632.webp" alt="Dr. Michael Lee">
+                <h3>Dr. Michael Lee</h3>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Healthcare Solutions. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#"><img src="https://static.vecteezy.com/system/resources/previews/018/910/719/non_2x/facebook-logo-facebook-icon-free-free-vector.jpg" alt="Facebook"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+            <a href="#"><img src="https://img.freepik.com/premium-vector/telegram-icon-social-media-popular-messenger-app_277909-495.jpg" alt="Telegram"></a>
+        </div>
+    </footer>
+</body>
+</html>

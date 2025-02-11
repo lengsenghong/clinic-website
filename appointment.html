@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make an Appointment</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="appointment-container">
+        <h2>Make an Appointment</h2>
+        <div class="appointment-box">
+            <div class="date-picker">
+                <label>Select Date</label>
+                <input type="date" id="appointment-date">
+            </div>
+            <div class="time-picker">
+                <label>Select Time</label>
+                <div class="time-buttons">
+                    <button class="time-slot">09:00 AM</button>
+                    <button class="time-slot">10:00 AM</button>
+                    <button class="time-slot">11:00 AM</button>
+                    <button class="time-slot">12:00 PM</button>
+                    <button class="time-slot">01:00 PM</button>
+                    <button class="time-slot">02:00 PM</button>
+                    <button class="time-slot">03:00 PM</button>
+                    <button class="time-slot">04:00 PM</button>
+                    <button class="time-slot">05:00 PM</button>
+                </div>
+            </div>
+            <div class="input-group">
+                <label>Name</label>
+                <input type="text" placeholder="e.g. 'Put Bopha'">
+            </div>
+            <div class="input-group">
+                <label>Phone Number</label>
+                <input type="text" placeholder="e.g. '097 XXX XXX'">
+            </div>
+            <button class="appointment-btn">Get Appointment</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

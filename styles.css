@@ -1,0 +1,579 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #008cba;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+.nav-buttons button {
+    background: #008cba;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    background: white;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    color: #666;
+}
+
+.find-doctors {
+    background: #008cba;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+}
+/* Navbar Styling
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0099cc;
+    display: flex;
+    align-items: center;
+}
+
+.logo::before {
+    content: '🩺';
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline;
+}
+nav ul li a:hover {
+    color: #0099cc;
+    text-decoration: underline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.appointment {
+    background: #0099cc;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+.appointment:hover {
+    background: #0077aa;
+    transform: scale(1.05);
+}
+
+.manage {
+    background: transparent;
+    border: 1px solid #ddd;
+    padding: 10px 18px;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: background 0.3s;
+}
+
+.manage::before {
+    content: '⚙️';
+    font-size: 14px;
+}
+.manage:hover {
+    background: #f3f3f3;
+} */
+/* Default Navbar Styles (Desktop) */
+.manage {
+    background: transparent;
+    border: 1px solid #ddd;
+    padding: 10px 8px;
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    transition: background 0.3s;
+}
+
+.manage::before {
+    content: '⚙️';
+    font-size: 14px;
+}
+.manage:hover {
+    background: #f3f3f3;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0099cc;
+    display: flex;
+    align-items: center;
+}
+
+.logo::before {
+    content: '🩺';
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline;
+}
+nav ul li a:hover {
+    color: #0099cc;
+    text-decoration: underline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #0099cc;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #0099cc;
+    text-decoration: underline;
+}
+
+/* Burger Menu (Hidden by Default) */
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.burger .line {
+    width: 30px;
+    height: 3px;
+    background: #000;
+    margin: 6px 0;
+    transition: all 0.3s ease;
+}
+
+/* Responsive Styles for Mobile */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        position: absolute;
+        right: 0;
+        top: 60px;
+        background: white;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        display: none;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 15px 0;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+
+/* Info Section */
+.info-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    background: #e6f7ff;
+}
+
+.info-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.info-card h3 {
+    color: #008cba;
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 600;
+
+}
+
+.info-card button {
+    background: #008cba;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Services Section - Modern Clean Design */
+.service-section {
+    text-align: center;
+    padding: 60px 10%;
+    background: #f8faff;
+}
+
+.service-section h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #333;
+}
+
+.service-intro {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+}
+
+.service-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #0099cc;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.learn-more {
+    display: inline-block;
+    text-decoration: none;
+    color: #0099cc;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.learn-more:hover {
+    color: #0077aa;
+    text-decoration: underline;
+}
+
+
+
+/* Doctors Section */
+.doctor-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.doctor-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.doctor-item {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.doctor-item:hover {
+    transform: translateY(-5px);
+}
+/* Contact Us Section */
+.contact-section {
+    text-align: center;
+    padding: 50px;
+    background: #f9f9f9;
+}
+
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    margin: auto;
+}
+
+.contact-section input, .contact-section textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-section button {
+    background: #0099cc;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-section button:hover {
+    background: #0077aa;
+}
+
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background: white;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-media a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.social-media a:hover {
+    transform: scale(1.1);
+}
+
+.social-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/* appointment  */
+.appointment-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-decoration: none;
+    margin: 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.date-picker, .time-picker, .input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+input[type="date"], input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.time-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.time-slot {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    background: white;
+    transition: background 0.3s;
+}
+
+.time-slot:hover, .time-slot.active {
+    background: #0077aa;
+    color: white;
+}
+
+.appointment-btn {
+    background: #6c83f0;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.appointment-btn:hover {
+    background: #0077aa;
+}
